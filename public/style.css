@@ -1,0 +1,170 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1120;
+    color: #f1f5f9;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    background: #111827;
+    border-bottom: 1px solid #263247;
+}
+
+.navbar h2 {
+    font-size: 27px;
+}
+
+.navbar h2 span {
+    color: #a78bfa;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #f1f5f9;
+    font-weight: bold;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    gap: 50px;
+}
+
+.content {
+    max-width: 600px;
+}
+
+.tag {
+    color: #a78bfa;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.content h1 span {
+    color: #a78bfa;
+}
+
+.description {
+    color: #94a3b8;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background: #7c3aed;
+    color: white;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #6d28d9;
+}
+
+.secondary {
+    background: transparent;
+    color: #c4b5fd;
+    border: 1px solid #7c3aed;
+}
+
+.secondary:hover {
+    background: #1e1b4b;
+}
+
+.card {
+    background: #111827;
+    padding: 45px 35px;
+    border-radius: 18px;
+    text-align: center;
+    width: 320px;
+    border: 1px solid #263247;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.icon {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    color: #f8fafc;
+}
+
+.card p {
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+.status {
+    margin-top: 25px;
+    color: #a78bfa;
+    font-weight: bold;
+}
+
+.status span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #a78bfa;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #94a3b8;
+    background: #111827;
+    border-top: 1px solid #263247;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 6%;
+    }
+
+    .content h1 {
+        font-size: 34px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
